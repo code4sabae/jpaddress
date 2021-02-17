@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>住居表示住所サマリーマップ</title>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta property="og:image"  content="https://taisukef.github.io/rekishiran/ranmap.png">
+<meta name="twitter:image" content="https://taisukef.github.io/rekishiran/ranmap.png">
+<style>
+a {
+  color: gray !important;
+}
+td {
+  max-width: 120px;
+  overflow: hidden;
+}
+</style>
+</head><body>
+
+<h1>住居表示住所サマリーマップ</h1>
+
+<script type="module" src="./csv-map-jpaddress.js"></script>
+<csv-map src="./jpaddress-summary.csv"></csv-map>
+
+<br>
+<a href=https://fukuno.jig.jp/app/opendatacity/jpaddress.html>住居表示住所データ公開率ダッシュボード</a><br>
+<br>
+App: CC BY <a href=https://fukuno.jig.jp/3126>福野泰介の一日一創</a> (<a href=https://github.com/code4sabae/powerplant/>src on GitHub</a>)<br>
+Data: 出典：国土交通省国土数値情報ダウンロードサイト <a href=https://www.gsi.go.jp/kihonjohochousa/jukyo_jusho.html>電子国土基本図（地名情報）「住居表示住所」 | 国土地理院</a>→ <a href=jpaddress-summary.csv>住居表示住所サマリー5.6万件</a><br>
+Map: <a href=https://maps.gsi.go.jp/>地理院地図</a> / <a href=https://leafletjs.com/>Leflet</a> / <a href=https://github.com/code4sabae/js/blob/master/csv-map.js>csv-map.js</a><br>
+
+</body>
+</html>
+
